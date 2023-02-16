@@ -1,0 +1,715 @@
+{
+    "plays": [
+        {
+            "__play_name": "web test",
+            "name": "web test",
+            "pattern": "localhost",
+            "play": "web test",
+            "play_pattern": "localhost",
+            "play_uuid": "327bb4be-5659-ef1a-3f44-000000000006",
+            "playbook": "/home/student/ansible_repo/test/web_test.yml",
+            "playbook_uuid": "a1d23fcb-ad7d-4e50-870a-073996d7e86b",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "1s",
+                    "__host": "localhost",
+                    "__number": 0,
+                    "__result": "Ok",
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "duration": 1.494478,
+                    "end": "2023-02-13T17:37:35.569318",
+                    "event_loop": null,
+                    "host": "localhost",
+                    "play": "web test",
+                    "play_pattern": "localhost",
+                    "play_uuid": "327bb4be-5659-ef1a-3f44-000000000006",
+                    "playbook": "/home/student/ansible_repo/test/web_test.yml",
+                    "playbook_uuid": "a1d23fcb-ad7d-4e50-870a-073996d7e86b",
+                    "remote_addr": "127.0.0.1",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "_ansible_verbose_override": true,
+                        "ansible_facts": {
+                            "ansible_apparmor": {
+                                "status": "disabled"
+                            },
+                            "ansible_architecture": "x86_64",
+                            "ansible_bios_date": "12/01/2006",
+                            "ansible_bios_vendor": "innotek GmbH",
+                            "ansible_bios_version": "VirtualBox",
+                            "ansible_board_asset_tag": "NA",
+                            "ansible_board_name": "VirtualBox",
+                            "ansible_board_serial": "NA",
+                            "ansible_board_vendor": "Oracle Corporation",
+                            "ansible_board_version": "1.2",
+                            "ansible_chassis_asset_tag": "NA",
+                            "ansible_chassis_serial": "NA",
+                            "ansible_chassis_vendor": "Oracle Corporation",
+                            "ansible_chassis_version": "NA",
+                            "ansible_cmdline": {
+                                "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-5.14.0-70.22.1.el9_0.x86_64",
+                                "crashkernel": "1G-4G:192M,4G-64G:256M,64G-:512M",
+                                "quiet": true,
+                                "rd.lvm.lv": "rhel/swap",
+                                "resume": "/dev/mapper/rhel-swap",
+                                "rhgb": true,
+                                "ro": true,
+                                "root": "/dev/mapper/rhel-root"
+                            },
+                            "ansible_date_time": {
+                                "date": "2023-02-13",
+                                "day": "13",
+                                "epoch": "1676309855",
+                                "epoch_int": "1676309855",
+                                "hour": "17",
+                                "iso8601": "2023-02-13T17:37:35Z",
+                                "iso8601_basic": "20230213T173735213155",
+                                "iso8601_basic_short": "20230213T173735",
+                                "iso8601_micro": "2023-02-13T17:37:35.213155Z",
+                                "minute": "37",
+                                "month": "02",
+                                "second": "35",
+                                "time": "17:37:35",
+                                "tz": "UTC",
+                                "tz_dst": "UTC",
+                                "tz_offset": "+0000",
+                                "weekday": "Monday",
+                                "weekday_number": "1",
+                                "weeknumber": "07",
+                                "year": "2023"
+                            },
+                            "ansible_device_links": {
+                                "ids": {},
+                                "labels": {},
+                                "masters": {
+                                    "sda2": [
+                                        "dm-0",
+                                        "dm-1"
+                                    ]
+                                },
+                                "uuids": {}
+                            },
+                            "ansible_devices": {
+                                "dm-0": {
+                                    "holders": [],
+                                    "host": "",
+                                    "links": {
+                                        "ids": [],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": []
+                                    },
+                                    "model": null,
+                                    "partitions": {},
+                                    "removable": "0",
+                                    "rotational": "1",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "",
+                                    "sectors": "56516608",
+                                    "sectorsize": "512",
+                                    "size": "26.95 GB",
+                                    "support_discard": "0",
+                                    "vendor": null,
+                                    "virtual": 1
+                                },
+                                "dm-1": {
+                                    "holders": [],
+                                    "host": "",
+                                    "links": {
+                                        "ids": [],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": []
+                                    },
+                                    "model": null,
+                                    "partitions": {},
+                                    "removable": "0",
+                                    "rotational": "1",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "",
+                                    "sectors": "4292608",
+                                    "sectorsize": "512",
+                                    "size": "2.05 GB",
+                                    "support_discard": "0",
+                                    "vendor": null,
+                                    "virtual": 1
+                                },
+                                "sda": {
+                                    "holders": [],
+                                    "host": "",
+                                    "links": {
+                                        "ids": [],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": []
+                                    },
+                                    "model": "VBOX HARDDISK",
+                                    "partitions": {
+                                        "sda1": {
+                                            "holders": [],
+                                            "links": {
+                                                "ids": [],
+                                                "labels": [],
+                                                "masters": [],
+                                                "uuids": []
+                                            },
+                                            "sectors": "2097152",
+                                            "sectorsize": 512,
+                                            "size": "1.00 GB",
+                                            "start": "2048",
+                                            "uuid": null
+                                        },
+                                        "sda2": {
+                                            "holders": [
+                                                "rhel-swap",
+                                                "rhel-root"
+                                            ],
+                                            "links": {
+                                                "ids": [],
+                                                "labels": [],
+                                                "masters": [
+                                                    "dm-0",
+                                                    "dm-1"
+                                                ],
+                                                "uuids": []
+                                            },
+                                            "sectors": "60815360",
+                                            "sectorsize": 512,
+                                            "size": "29.00 GB",
+                                            "start": "2099200",
+                                            "uuid": null
+                                        }
+                                    },
+                                    "removable": "0",
+                                    "rotational": "1",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "mq-deadline",
+                                    "sectors": "62914560",
+                                    "sectorsize": "512",
+                                    "size": "30.00 GB",
+                                    "support_discard": "0",
+                                    "vendor": "ATA",
+                                    "virtual": 1
+                                },
+                                "sdb": {
+                                    "holders": [],
+                                    "host": "",
+                                    "links": {
+                                        "ids": [],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": []
+                                    },
+                                    "model": "VBOX HARDDISK",
+                                    "partitions": {
+                                        "sdb1": {
+                                            "holders": [],
+                                            "links": {
+                                                "ids": [],
+                                                "labels": [],
+                                                "masters": [],
+                                                "uuids": []
+                                            },
+                                            "sectors": "2867198",
+                                            "sectorsize": 512,
+                                            "size": "1.37 GB",
+                                            "start": "2",
+                                            "uuid": null
+                                        }
+                                    },
+                                    "removable": "0",
+                                    "rotational": "1",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "mq-deadline",
+                                    "sectors": "4194304",
+                                    "sectorsize": "512",
+                                    "size": "2.00 GB",
+                                    "support_discard": "0",
+                                    "vendor": "ATA",
+                                    "virtual": 1
+                                },
+                                "sr0": {
+                                    "holders": [],
+                                    "host": "",
+                                    "links": {
+                                        "ids": [],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": []
+                                    },
+                                    "model": "CD-ROM",
+                                    "partitions": {},
+                                    "removable": "1",
+                                    "rotational": "1",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "mq-deadline",
+                                    "sectors": "16572416",
+                                    "sectorsize": "2048",
+                                    "size": "7.90 GB",
+                                    "support_discard": "0",
+                                    "vendor": "VBOX",
+                                    "virtual": 1
+                                }
+                            },
+                            "ansible_distribution": "RedHat",
+                            "ansible_distribution_file_parsed": true,
+                            "ansible_distribution_file_path": "/etc/redhat-release",
+                            "ansible_distribution_file_search_string": "Red Hat",
+                            "ansible_distribution_file_variety": "RedHat",
+                            "ansible_distribution_major_version": "8",
+                            "ansible_distribution_release": "Ootpa",
+                            "ansible_distribution_version": "8.7",
+                            "ansible_dns": {
+                                "nameservers": [
+                                    "10.0.2.3",
+                                    "192.168.99.1"
+                                ],
+                                "search": [
+                                    "lan",
+                                    "lab.example.com"
+                                ]
+                            },
+                            "ansible_domain": "",
+                            "ansible_effective_group_id": 0,
+                            "ansible_effective_user_id": 0,
+                            "ansible_fibre_channel_wwn": [],
+                            "ansible_fips": false,
+                            "ansible_form_factor": "Other",
+                            "ansible_fqdn": "66f4eb09f021",
+                            "ansible_hostname": "66f4eb09f021",
+                            "ansible_hostnqn": "",
+                            "ansible_is_chroot": false,
+                            "ansible_iscsi_iqn": "",
+                            "ansible_kernel": "5.14.0-70.22.1.el9_0.x86_64",
+                            "ansible_kernel_version": "#1 SMP PREEMPT Tue Aug 2 10:02:12 EDT 2022",
+                            "ansible_local": {},
+                            "ansible_lsb": {},
+                            "ansible_machine": "x86_64",
+                            "ansible_machine_id": "b97b717f319949e1af2d9447defaaf83",
+                            "ansible_memfree_mb": 1544,
+                            "ansible_memory_mb": {
+                                "nocache": {
+                                    "free": 2176,
+                                    "used": 1547
+                                },
+                                "real": {
+                                    "free": 1544,
+                                    "total": 3723,
+                                    "used": 2179
+                                },
+                                "swap": {
+                                    "cached": 0,
+                                    "free": 2095,
+                                    "total": 2095,
+                                    "used": 0
+                                }
+                            },
+                            "ansible_memtotal_mb": 3723,
+                            "ansible_mounts": [
+                                {
+                                    "block_available": 3966966,
+                                    "block_size": 4096,
+                                    "block_total": 7061127,
+                                    "block_used": 3094161,
+                                    "device": "/dev/mapper/rhel-root",
+                                    "fstype": "xfs",
+                                    "inode_available": 13659896,
+                                    "inode_total": 14129152,
+                                    "inode_used": 469256,
+                                    "mount": "/runner",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                                    "size_available": 16248692736,
+                                    "size_total": 28922376192,
+                                    "uuid": "N/A"
+                                },
+                                {
+                                    "block_available": 3966966,
+                                    "block_size": 4096,
+                                    "block_total": 7061127,
+                                    "block_used": 3094161,
+                                    "device": "/dev/mapper/rhel-root",
+                                    "fstype": "xfs",
+                                    "inode_available": 13659896,
+                                    "inode_total": 14129152,
+                                    "inode_used": 469256,
+                                    "mount": "/runner/artifacts",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                                    "size_available": 16248692736,
+                                    "size_total": 28922376192,
+                                    "uuid": "N/A"
+                                },
+                                {
+                                    "block_available": 3966966,
+                                    "block_size": 4096,
+                                    "block_total": 7061127,
+                                    "block_used": 3094161,
+                                    "device": "/dev/mapper/rhel-root",
+                                    "fstype": "xfs",
+                                    "inode_available": 13659896,
+                                    "inode_total": 14129152,
+                                    "inode_used": 469256,
+                                    "mount": "/root/.ssh",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                                    "size_available": 16248692736,
+                                    "size_total": 28922376192,
+                                    "uuid": "N/A"
+                                },
+                                {
+                                    "block_available": 3966966,
+                                    "block_size": 4096,
+                                    "block_total": 7061127,
+                                    "block_used": 3094161,
+                                    "device": "/dev/mapper/rhel-root",
+                                    "fstype": "xfs",
+                                    "inode_available": 13659896,
+                                    "inode_total": 14129152,
+                                    "inode_used": 469256,
+                                    "mount": "/home/runner/.ssh",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                                    "size_available": 16248692736,
+                                    "size_total": 28922376192,
+                                    "uuid": "N/A"
+                                },
+                                {
+                                    "block_available": 3966966,
+                                    "block_size": 4096,
+                                    "block_total": 7061127,
+                                    "block_used": 3094161,
+                                    "device": "/dev/mapper/rhel-root",
+                                    "fstype": "xfs",
+                                    "inode_available": 13659896,
+                                    "inode_total": 14129152,
+                                    "inode_used": 469256,
+                                    "mount": "/home/student/ansible_repo/test",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                                    "size_available": 16248692736,
+                                    "size_total": 28922376192,
+                                    "uuid": "N/A"
+                                }
+                            ],
+                            "ansible_nodename": "66f4eb09f021",
+                            "ansible_os_family": "RedHat",
+                            "ansible_pkg_mgr": "dnf",
+                            "ansible_proc_cmdline": {
+                                "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-5.14.0-70.22.1.el9_0.x86_64",
+                                "crashkernel": "1G-4G:192M,4G-64G:256M,64G-:512M",
+                                "quiet": true,
+                                "rd.lvm.lv": [
+                                    "rhel/root",
+                                    "rhel/swap"
+                                ],
+                                "resume": "/dev/mapper/rhel-swap",
+                                "rhgb": true,
+                                "ro": true,
+                                "root": "/dev/mapper/rhel-root"
+                            },
+                            "ansible_processor": [
+                                "0",
+                                "AuthenticAMD",
+                                "AMD Ryzen 5 5625U with Radeon Graphics",
+                                "1",
+                                "AuthenticAMD",
+                                "AMD Ryzen 5 5625U with Radeon Graphics"
+                            ],
+                            "ansible_processor_cores": 2,
+                            "ansible_processor_count": 1,
+                            "ansible_processor_nproc": 2,
+                            "ansible_processor_threads_per_core": 1,
+                            "ansible_processor_vcpus": 2,
+                            "ansible_product_name": "VirtualBox",
+                            "ansible_product_serial": "NA",
+                            "ansible_product_uuid": "NA",
+                            "ansible_product_version": "1.2",
+                            "ansible_python": {
+                                "executable": "/usr/bin/python3.9",
+                                "has_sslcontext": true,
+                                "type": "cpython",
+                                "version": {
+                                    "major": 3,
+                                    "micro": 13,
+                                    "minor": 9,
+                                    "releaselevel": "final",
+                                    "serial": 0
+                                },
+                                "version_info": [
+                                    3,
+                                    9,
+                                    13,
+                                    "final",
+                                    0
+                                ]
+                            },
+                            "ansible_python_version": "3.9.13",
+                            "ansible_real_group_id": 0,
+                            "ansible_real_user_id": 0,
+                            "ansible_selinux": {
+                                "status": "disabled"
+                            },
+                            "ansible_selinux_python_present": true,
+                            "ansible_service_mgr": "dumb-init",
+                            "ansible_swapfree_mb": 2095,
+                            "ansible_swaptotal_mb": 2095,
+                            "ansible_system": "Linux",
+                            "ansible_system_capabilities": [
+                                "ep"
+                            ],
+                            "ansible_system_capabilities_enforced": "True",
+                            "ansible_system_vendor": "innotek GmbH",
+                            "ansible_uptime_seconds": 10671,
+                            "ansible_user_dir": "/home/runner",
+                            "ansible_user_gecos": "root",
+                            "ansible_user_gid": 0,
+                            "ansible_user_id": "root",
+                            "ansible_user_shell": "/bin/bash",
+                            "ansible_user_uid": 0,
+                            "ansible_userspace_architecture": "x86_64",
+                            "ansible_userspace_bits": "64",
+                            "ansible_virtualization_role": "guest",
+                            "ansible_virtualization_tech_guest": [
+                                "virtualbox",
+                                "container"
+                            ],
+                            "ansible_virtualization_tech_host": [],
+                            "ansible_virtualization_type": "container",
+                            "gather_subset": [
+                                "all"
+                            ],
+                            "module_setup": true
+                        },
+                        "changed": false,
+                        "deprecations": [],
+                        "warnings": []
+                    },
+                    "resolved_action": "ansible.builtin.gather_facts",
+                    "start": "2023-02-13T17:37:34.074840",
+                    "task": "Gathering Facts",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/home/student/ansible_repo/test/web_test.yml:2",
+                    "task_uuid": "327bb4be-5659-ef1a-3f44-00000000000e",
+                    "uuid": "412801d9-fe09-4ded-a596-d735668f3243"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "1s",
+                    "__host": "localhost",
+                    "__number": 1,
+                    "__result": "Failed",
+                    "__task": "check web status",
+                    "__task_action": "ansible.builtin.yum",
+                    "duration": 1.1472,
+                    "end": "2023-02-13T17:37:36.741549",
+                    "event_loop": null,
+                    "host": "localhost",
+                    "ignore_errors": null,
+                    "play": "web test",
+                    "play_pattern": "localhost",
+                    "play_uuid": "327bb4be-5659-ef1a-3f44-000000000006",
+                    "playbook": "/home/student/ansible_repo/test/web_test.yml",
+                    "playbook_uuid": "a1d23fcb-ad7d-4e50-870a-073996d7e86b",
+                    "remote_addr": "127.0.0.1",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "changed": false,
+                        "invocation": {
+                            "module_args": {
+                                "allow_downgrade": false,
+                                "allowerasing": false,
+                                "autoremove": false,
+                                "bugfix": false,
+                                "cacheonly": false,
+                                "conf_file": null,
+                                "disable_excludes": null,
+                                "disable_gpg_check": false,
+                                "disable_plugin": [],
+                                "disablerepo": [],
+                                "download_dir": null,
+                                "download_only": false,
+                                "enable_plugin": [],
+                                "enablerepo": [],
+                                "exclude": [],
+                                "install_repoquery": true,
+                                "install_weak_deps": true,
+                                "installroot": "/",
+                                "list": null,
+                                "lock_timeout": 30,
+                                "name": [
+                                    "mariadb",
+                                    "mariadb-server"
+                                ],
+                                "nobest": false,
+                                "releasever": null,
+                                "security": false,
+                                "skip_broken": false,
+                                "sslverify": true,
+                                "state": "latest",
+                                "update_cache": false,
+                                "update_only": false,
+                                "validate_certs": true
+                            }
+                        },
+                        "msg": "Could not import the dnf python module using /usr/bin/python3.9 (3.9.13 (main, Nov  9 2022, 13:16:24) [GCC 8.5.0 20210514 (Red Hat 8.5.0-15)]). Please install `python3-dnf` or `python2-dnf` package or ensure you have specified the correct ansible_python_interpreter. (attempted ['/usr/libexec/platform-python', '/usr/bin/python3', '/usr/bin/python2', '/usr/bin/python'])",
+                        "results": []
+                    },
+                    "resolved_action": "ansible.builtin.yum",
+                    "start": "2023-02-13T17:37:35.594349",
+                    "task": "check web status",
+                    "task_action": "ansible.builtin.yum",
+                    "task_args": "",
+                    "task_path": "/home/student/ansible_repo/test/web_test.yml:5",
+                    "task_uuid": "327bb4be-5659-ef1a-3f44-000000000008",
+                    "uuid": "249d58fa-e784-46d5-8578-3ef5aa0a1965"
+                }
+            ],
+            "uuid": "327bb4be-5659-ef1a-3f44-000000000006"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/home/student/ansible_repo/test/inventory"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/home/student/ansible_repo/test/web_test.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/home/student/ansible_repo/test"
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/home/student/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "podman",
+                "enabled": true,
+                "image": "registry.redhat.io/ansible-automation-platform-22/ee-supported-rhel8:latest",
+                "pull": {
+                    "policy": "tag"
+                }
+            },
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/home/student/ansible_repo/test/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "stdout",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Not set",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Ansible configuration file",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Command line",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Automatically determined",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Defaults",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Command line",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Defaults",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Command line",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "None",
+        "settings_file_source": "None"
+    },
+    "status": "failed",
+    "status_color": 9,
+    "stdout": [
+        "",
+        "PLAY [web test] ****************************************************************",
+        "",
+        "TASK [Gathering Facts] *********************************************************",
+        "\u001b[0;32mok: [localhost]\u001b[0m",
+        "",
+        "TASK [check web status] ********************************************************",
+        "\u001b[0;31mfatal: [localhost]: FAILED! => {\"changed\": false, \"msg\": \"Could not import the dnf python module using /usr/bin/python3.9 (3.9.13 (main, Nov  9 2022, 13:16:24) [GCC 8.5.0 20210514 (Red Hat 8.5.0-15)]). Please install `python3-dnf` or `python2-dnf` package or ensure you have specified the correct ansible_python_interpreter. (attempted ['/usr/libexec/platform-python', '/usr/bin/python3', '/usr/bin/python2', '/usr/bin/python'])\", \"results\": []}\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;31mlocalhost\u001b[0m                  : \u001b[0;32mok=1   \u001b[0m changed=0    unreachable=0    \u001b[0;31mfailed=1   \u001b[0m skipped=0    rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}

@@ -1,0 +1,15 @@
+---
+- name: web test
+  hosts: all 
+  tasks: 
+    - name: check web status 
+      ansible.builtin.yum: 
+        name: 
+          - mariadb
+          - mariadb-server 
+        state: latest
+    - name: started and enabled 
+      ansible.builtin.systemd: 
+        name: mariadb
+        state: started 
+        enabled: true 
